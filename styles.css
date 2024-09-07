@@ -1,0 +1,330 @@
+/* Estilos generales */
+body {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+.navbar {
+    background-color: #000; /* Fondo negro */
+    
+}
+
+.navbar-brand .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Logo circular */
+}
+
+.nav-link {
+    color: #ffdd00; /* Texto del nav en amarillo */
+}
+
+.nav-link:hover {
+    background-color: #000; /* Fondo negro al pasar el cursor */
+    color: #fff; /* Texto del nav en blanco al pasar el cursor */
+    border-radius: 4px; /* Bordes redondeados del fondo negro */
+    padding: 0.5rem 1rem; /* Ajustar el padding para el botón de fondo negro */
+}
+
+.section-title {
+    color: #ffdd00; /* Títulos de sección en amarillo */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    margin-top: 30px; /* Ajustar el espacio superior del título */
+}
+
+.custom-card {
+    border: none; /* Quitar el borde de las tarjetas */
+    border-radius: 9px; /* Bordes redondeados de las tarjetas */
+    transition: transform 0.1s ease, box-shadow 0.1s ease; /* Suavizar la transición del efecto */
+    overflow: hidden; /* Asegura que el contenido no se desborde del borde redondeado */
+    margin-bottom: 30px; /* Margen inferior para separar las tarjetas verticalmente */
+}
+
+.card-img-top {
+    height: 220px; /* Tamaño uniforme para las imágenes */
+    object-fit: cover; /* Mantener la imagen dentro del tamaño sin distorsión */
+}
+
+.card-body {
+    background-color: #000000; /* Fondo de las tarjetas */
+}
+
+.card-title {
+    color: #ffdd00; /* Títulos de las tarjetas en amarillo */
+}
+
+.card-text {
+    color: #ccc; /* Texto de las tarjetas en gris claro */
+}
+
+.btn-custom {
+    background-color: #ffdd00; /* Botón amarillo */
+    color: #000; /* Texto del botón en negro */
+}
+
+.btn-custom:hover {
+    background-color: #fff; /* Botón blanco al pasar el cursor */
+    color: #000; /* Texto negro */
+}
+
+/* Estilo para la tabla de horarios */
+#horarios table {
+    background-color: #000000; /* Fondo negro de la tabla */
+    color: #fff; /* Texto blanco */
+    width: 100%; /* Ancho completo de la tabla */
+}
+
+#horarios th,
+#horarios td {
+    color: #fff; /* Texto blanco para celdas */
+}
+
+/* Estilo para el iframe */
+.map-container {
+    width: 100%; /* Ancho completo del contenedor */
+}
+
+iframe {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 450px; /* Altura fija para un aspecto alargado */
+    border: 0; /* Eliminar el borde */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    object-fit: cover; /* Asegura que el contenido del iframe se ajuste bien */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    margin: 0; /* Eliminar margen */
+}
+
+/* Estilos responsivos para móviles */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px; /* Separar las tarjetas en móviles */
+        text-align: center; /* Centrar el texto en móviles */
+    }
+
+    .card:hover {
+        transform: scale(1.05); /* Agrandar la tarjeta en móviles */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añadir una sombra para dar un efecto de profundidad */
+    }
+    .card-img-top {
+        object-fit: cover;
+        width: 100%;
+        height: 200px; /* Ajusta la altura según sea necesario */
+    }
+    .custom-card {
+        margin-bottom: 20px; /* Reducir margen inferior para dispositivos pequeños */
+    }
+    #productos .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Efecto de hover para las tarjetas en pantallas grandes */
+@media (min-width: 769px) {
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suavizar la transición del efecto */
+    }
+
+    .card:hover {
+        transform: scale(1.05); /* Agrandar la tarjeta */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Añadir una sombra más visible y negra */
+    }
+}
+
+/* Estilos para el formulario de contacto */
+#contacto {
+    background-color: #222; /* Fondo gris oscuro para el formulario */
+    padding: 40px 0; /* Espaciado superior e inferior */
+}
+
+#contact-form {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+}
+
+.form-control {
+    border-radius: 4px; /* Bordes redondeados para los campos */
+    background-color: #333; /* Fondo gris oscuro para los campos */
+    color: #fff; /* Texto blanco para los campos */
+    border: 1px solid #444; /* Borde gris oscuro */
+}
+
+.form-control:focus {
+    background-color: #444; /* Fondo más oscuro al enfocarse */
+    border-color: #ffdd00; /* Borde amarillo al enfocarse */
+    color: #fff; /* Texto blanco al enfocarse */
+}
+
+/* Alineación del formulario y botones en dispositivos móviles */
+@media (max-width: 767px) {
+    .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn-custom {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.btn-custom {
+    background-color: #ffdd00; /* Color del botón amarillo */
+    color: #000; /* Texto del botón en negro */
+    flex: 1; /* Permite que los botones ocupen el mismo ancho */
+    margin: 0 5px; /* Espacio entre botones */
+}
+
+.btn-custom:hover {
+    background-color: #fff; /* Color del botón al pasar el cursor */
+    color: #000; /* Texto del botón en negro */
+}
+
+.d-flex {
+    display: flex; /* Usar flexbox para la alineación de botones */
+    justify-content: space-between; /* Espacio entre botones */
+    align-items: center; /* Alinear verticalmente */
+}
+
+
+#calculo-calorias .form-group label {
+    color: #ffdd00; /* Color amarillo para las etiquetas */
+}
+
+#calculo-calorias .form-control {
+    background-color: #333; /* Fondo gris oscuro para los campos */
+    color: #fff; /* Texto blanco para los campos */
+    border: 1px solid #444; /* Borde gris oscuro */
+}
+
+#calculo-calorias .btn-custom {
+    background-color: #ffdd00; /* Botón amarillo */
+    color: #000; /* Texto del botón en negro */
+}
+
+#calculo-calorias #caloriasResult {
+    color: #ffdd00; /* Color amarillo para el resultado de calorías */
+}
+
+/* Estilo para la sección de descarga */
+#descarga {
+    background-color: #000000; /* Fondo gris oscuro para la sección */
+    padding: 40px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar el texto y el botón */
+}
+
+#descarga .section-title {
+    color: #ffdd00; /* Título en amarillo */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+#descarga p {
+    color: #ccc; /* Texto de la explicación en gris claro */
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+}
+
+#descarga .btn-custom {
+    background-color: #ffdd00; /* Botón amarillo */
+    color: #000; /* Texto del botón en negro */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    border-radius: 4px; /* Bordes redondeados del botón */
+    display: inline-block; /* Mostrar el botón en línea */
+}
+
+#descarga .btn-custom:hover {
+    background-color: #fff; /* Botón blanco al pasar el cursor */
+    color: #000; /* Texto negro */
+}
+/* Estilo para la línea divisoria entre secciones */
+.section-divider {
+    border: 0; /* Eliminar borde predeterminado */
+    height: 2px; /* Altura de la línea */
+    background: #66655ce4; /* Color de la línea (amarillo en tu caso) */
+    margin: 40px auto; /* Espaciado superior e inferior, centrado horizontalmente */
+    width: 80%; /* Ancho de la línea */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+}
+.modal-content {
+    background-color: #222; /* Fondo gris oscuro para el modal */
+    color: #fff; /* Texto blanco */
+}
+
+.modal-header .close {
+    color: #ffdd00; /* Color amarillo para el botón de cerrar */
+}
+
+.modal-footer .btn-primary {
+    background-color: #ffdd00; /* Botón amarillo */
+    color: #000; /* Texto negro */
+}
+
+.modal-footer .btn-secondary {
+    background-color: #333; /* Botón gris oscuro para cancelar */
+    color: #fff; /* Texto blanco */
+}
+
+
+
+#registro-interesados {
+    background-color: #000; /* Fondo negro para el formulario */
+    padding: 40px 0; /* Espaciado superior e inferior */
+}
+
+#registro-interesados .form-group label {
+    color: #ffdd00; /* Color amarillo para las etiquetas */
+}
+
+#registro-interesados .form-control {
+    background-color: #333; /* Fondo gris oscuro para los campos */
+    color: #fff; /* Texto blanco para los campos */
+    border: 1px solid #444; /* Borde gris oscuro */
+}
+
+#registro-interesados .btn-custom,
+#registro-interesados .btn-whatsapp {
+    width: 100%; /* Hacer que los botones ocupen el ancho completo */
+    max-width: 400px; /* Limitar el ancho máximo para evitar botones demasiado anchos */
+    margin-bottom: 10px; /* Espacio inferior entre los botones */
+    display: block; /* Asegura que se comporten como bloques */
+    text-align: center; /* Centra el texto dentro de los botones */
+    border: none; /* Elimina bordes adicionales */
+    padding: 10px; /* Espaciado interno para los botones */
+    font-size: 16px; /* Tamaño de fuente para mejor legibilidad */
+}
+
+#registro-interesados .btn-whatsapp {
+    background-color: #25d366; /* Botón de WhatsApp verde */
+    color: #fff; /* Color del texto del botón */
+    color: #000;
+}
+
+#registro-interesados .btn-whatsapp:hover {
+    background-color: #fff; /* Fondo blanco al pasar el ratón */
+    color: #000; /* Color del texto del botón de WhatsApp al pasar el ratón */
+}
+
+/* Estilo para el contenedor de los botones */
+.button-container {
+    display: flex; /* Usar flexbox para la alineación de botones */
+    justify-content: center; /* Centrar los botones */
+    gap: 10px; /* Espacio entre los botones */
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en pantallas pequeñas */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 767px) {
+    .button-container {
+        flex-direction: column; /* Alinear botones en columna en pantallas pequeñas */
+        align-items: center; /* Centrar los botones horizontalmente */
+    }
+
+    #registro-interesados .btn-custom,
+    #registro-interesados .btn-whatsapp {
+        width: 90%; /* Ajustar el ancho a 90% en pantallas pequeñas para más margen */
+        max-width: none; /* Eliminar la limitación del ancho máximo en pantallas pequeñas */
+        margin-bottom: 10px; /* Margen inferior para los botones en dispositivos móviles */
+    }
+}
+
+
